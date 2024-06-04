@@ -1,0 +1,26 @@
+POST http://localhost:3333/events
+Content-Type: application/json
+
+{
+  "title": "Novo evento 1",
+  "details": "Um evento muito esperando por todos na área de programação",
+  "maximumAttendees": 2
+}
+
+###
+
+POST http://localhost:3333/events/d87e580b-6d51-481b-92bf-bad3bb88d549/attendees
+Content-Type: application/json
+
+ {
+  "name": "Paulo Ricardo",
+  "email": "paulodev03@gmail.com"
+ }
+
+###
+
+GET http://localhost:3333/events/d87e580b-6d51-481b-92bf-bad3bb88d549
+
+###
+
+GET http://localhost:3333/attendees/3/badge
